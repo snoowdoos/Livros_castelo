@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografias</title>
+</head>
+<body>
+<nav class="breadcrumb">
+    <ol>
+        <li><a href="index.html">📚 Livros</a></li>
+        <li><a href="#">Biografia</a></li>
+        <li class="active">Página Atual</li>
+    </ol>
+</nav>
+<div class="superior">
+    <h1> Biografia de lendas do mundo</h1>
+    <p> Conheça um pouco dos grandes revolucionários do mundo</p>
+
+    <div class="container ">
+ <div class="card-atriz">
+        <img src="img/lisa.jpg" alt="Clarice Lispector" class="foto-atriz">
+       <div class="texto-biografia"></div>
+       <h2>Liza Minelli</h2>
+       <p>Esta biografia narra a vida de Liza Minnelli, desde sua infância extraordinária como filha de pais do show business, tendo que lidar com o trauma de ver sua mãe, Judy Garland, tornar-se alcoólatra e viciada em drogas, até sua trajetória de sucesso por mérito próprio — enfrentando muitos dos mesmos problemas que sua mãe no processo — até se tornar uma das maiores estrelas do teatro e do cinema de todos os tempos. Da autora de "Arnold: A Biografia Não Autorizada de Arnold Schwarzenegger".</p>
+    </div>
+    </div>
+
+<style>
+
+    .superior p{
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #666;
+        font-size: 1.1em;
+        margin-top: -10px;
+    }
+    .superior h1 {
+        text-align: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: #333;
+    }
+    .container{
+        display: flex;
+        gap:30px;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 40px auto;
+        background: white;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .texto-biografia{
+          flex: 1;
+          font-family: Georgia, 'Times New Roman', serif;
+          color: #444;
+         line-height: 1.6;
+    }
+    .texto-biografia h2 {
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 28px;
+}
+    body{
+        background:#f7f7f7;
+
+    }
+    .card-atriz {
+    text-align: center;
+    margin: 20px;
+}
+
+.foto-atriz {
+    width: 300px;
+    border-radius: 10px;
+}
+.card-atriz p {
+    display: block;
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+}
+
+.card-atriz:hover {
+    text-decoration: underline;
+}
+
+   
+    .breadcrumb {
+        width: 100%;
+        padding: 10px 20px;
+        background: #f2f2f2;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+    }
+
+    .breadcrumb ol {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .breadcrumb li::after {
+        content: ">";
+        margin: 0 6px;
+        color: #555;
+    }
+
+    .breadcrumb li:last-child::after {
+        content: "";
+    }
+
+    .breadcrumb a {
+        text-decoration: none;
+        color: #0077cc;
+        transition: 0.2s;
+    }
+
+    .breadcrumb a:hover {
+        color: #004999;
+    }
+
+    .breadcrumb .active {
+        font-weight: bold;
+        color: #333;
+    }
+    @media (max-width: 480px) {
+        .breadcrumb {
+            font-size: 13px;
+            padding: 8px 15px;
+        }
+        @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-atriz {
+        width: 70%;
+        margin: 0 auto 20px;
+    }
+
+    .texto-biografia {
+        text-align: justify;
+    }
+}
+
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const file = location.pathname.split("/").pop().replace(".html", "");
+        const formatado = file
+            .replace(/_/g, " ")
+            .replace(/-/g, " ")
+            .replace(/ã/g, "a")
+            .replace(/ç/g, "c")
+            .replace(/\b\w/g, l => l.toUpperCase());
+
+        document.querySelector(".breadcrumb .active").textContent = formatado;
+    });
+</script>
+</body>
+</html>

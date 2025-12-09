@@ -1,0 +1,256 @@
+<!-- BREADCRUMB -->
+<nav class="breadcrumb">
+    <ol>
+        <li><a href="index.html">📚 Livros</a></li>
+        <li><a href="#">Literatura Asiática</a></li>
+        <li class="active">Página Atual</li>
+    </ol>
+</nav>
+<div class="texto-topo">
+    <h2>Explorando a Literatura Asiática Contemporânea</h2>
+</div>
+
+<div class="container">
+
+    <h1 class="titulo">Haruki Murakami</h1>
+    <h2 class="sub">O mestre da narrativa onírica e surreal</h2>
+
+    <div class="image-box">
+        <img src="img/haruki.jpeg" alt="Capa do livro The City and Its Uncertain Walls">
+    </div>
+
+    <section class="ficha">
+        <h3 class="secao">Informações Gerais</h3>
+        <ul>
+            <li><strong>Nome completo:</strong> Haruki Murakami</li>
+            <li><strong>Nascimento:</strong> 12 de janeiro de 1949 – Quioto, Japão</li>
+            <li><strong>Nacionalidade:</strong> Japonesa</li>
+            <li><strong>Ocupação:</strong> Escritor, tradutor</li>
+            <li><strong>Estilo literário:</strong> Surrealismo, realismo mágico, introspectivo</li>
+        </ul>
+    </section>
+
+    <section class="texto">
+        <h3 class="secao">Sobre o Autor</h3>
+        <p>
+            Haruki Murakami é reconhecido mundialmente por suas histórias que misturam realidade, sonhos e elementos surreais. 
+            Suas obras exploram a solidão, o amor, a perda e a busca por significado em um mundo moderno e muitas vezes absurdo.
+        </p>
+        <p>
+            Traduzido para dezenas de idiomas, Murakami também é conhecido por sua paixão por música, especialmente jazz, e por influenciar gerações de leitores e escritores ao redor do mundo.
+        </p>
+    </section>
+
+    <section class="texto">
+        <h3 class="secao">The City and Its Uncertain Walls</h3>
+        <p>
+            “The City and Its Uncertain Walls” é um romance que explora a complexidade das relações humanas e o caráter fragmentado da memória e da identidade.
+            A narrativa mistura realidade e fantasia, transportando o leitor para um universo onde as cidades e as pessoas são tão incertas quanto as paredes que as cercam.
+        </p>
+        <p>
+            Como em outros trabalhos de Murakami, elementos oníricos e simbolismo profundo são constantes, tornando a leitura ao mesmo tempo desafiadora e fascinante.
+        </p>
+    </section>
+
+    <section class="texto">
+        <h3 class="secao">Frases Marcantes</h3>
+        <blockquote>
+            “A memória é uma cidade com muros que mudam de lugar sem aviso.”
+        </blockquote>
+        <blockquote>
+            “A solidão não é ausência, mas presença de si mesmo em outro espaço.”
+        </blockquote>
+        <blockquote>
+            “Os labirintos que construímos em nossa mente são tão reais quanto as ruas que percorremos.”
+        </blockquote>
+    </section>
+
+    <section class="texto">
+        <h3 class="secao">Curiosidades</h3>
+        <ul>
+            <li>Murakami trabalhou como proprietário de uma pequena loja de jazz antes de se dedicar à escrita.</li>
+            <li>Ele é um corredor apaixonado, escrevendo alguns livros enquanto mantinha uma rotina intensa de treinos de maratona.</li>
+            <li>“The City and Its Uncertain Walls” mantém o estilo onírico e introspectivo presente em outros romances do autor.</li>
+            <li>Muitos de seus livros foram adaptados para cinema e teatro, inspirando produções internacionais.</li>
+        </ul>
+    </section>
+
+</div>
+
+<style>
+    body {
+    background: #f7f7f7;
+    font-family: "Georgia", serif;
+    color: #333;
+    margin: 0;
+}
+.texto-topo h2{
+    font-family:"Georgia", serif; 
+    text-align: center;
+    margin-top: 20px;
+    color:#444;
+    font-size: 1.9em;
+}
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 6px;
+}
+.titulo {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 0;
+    color: #222;
+}
+.sub {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    color: #555;
+}
+.image-box {
+    text-align: center;
+}
+.image-box img {
+    width: 70%;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.secao {
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-left: 5px solid #4a7a8c;
+    padding-left: 10px;
+}
+.ficha ul,
+.texto ul {
+    list-style: none;
+    padding: 0;
+}
+.ficha ul li,
+.texto ul li {
+    padding: 6px 0;
+    font-size: 17px;
+}
+.texto p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+blockquote {
+    font-size: 20px;
+    font-style: italic;
+    background: #eef4f6;
+    padding: 15px;
+    border-left: 5px solid #4a7a8c;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.breadcrumb {
+    width: 100%;
+    padding: 10px 20px;
+    background: #f2f2f2;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.breadcrumb li::after {
+    content: ">";
+    margin: 0 6px;
+    color: #555;
+}
+.breadcrumb li:last-child::after {
+    content: "";
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: #0077cc;
+    transition: 0.2s;
+}
+.breadcrumb a:hover {
+    color: #004999;
+}
+.breadcrumb .active {
+    font-weight: bold;
+    color: #333;
+}
+@media (max-width: 480px) {
+    .breadcrumb {
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+}
+    
+    .breadcrumb {
+        width: 100%;
+        padding: 10px 20px;
+        background: #f2f2f2;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+    }
+
+    .breadcrumb ol {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .breadcrumb li::after {
+        content: ">";
+        margin: 0 6px;
+        color: #555;
+    }
+
+    .breadcrumb li:last-child::after {
+        content: "";
+    }
+
+    .breadcrumb a {
+        text-decoration: none;
+        color: #0077cc;
+        transition: 0.2s;
+    }
+
+    .breadcrumb a:hover {
+        color: #004999;
+    }
+
+    .breadcrumb .active {
+        font-weight: bold;
+        color: #333;
+    }
+
+ 
+    @media (max-width: 480px) {
+        .breadcrumb {
+            font-size: 13px;
+            padding: 8px 15px;
+        }
+    }
+</style>
+
+<script>
+   
+    document.addEventListener("DOMContentLoaded", () => {
+        const file = location.pathname.split("/").pop().replace(".html", "");
+        const formatado = file
+            .replace(/_/g, " ")
+            .replace(/-/g, " ")
+            .replace(/ã/g, "a")
+            .replace(/ç/g, "c")
+            .replace(/\b\w/g, l => l.toUpperCase());
+
+        document.querySelector(".breadcrumb .active").textContent = formatado;
+    });
+</script>
